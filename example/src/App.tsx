@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './style.css'
 import { IdentityModal, useIdentityContext, IdentityContextProvider } from 'react-netlify-identity-widget'
 import 'react-netlify-identity-widget/styles.css'
 
@@ -56,7 +56,7 @@ function AuthStatusView() {
         <h3>
           Or{' '}
           <a
-            href="https://github.com/sw-yx/react-netlify-identity-widget"
+            href="https://github.com/hackersandslackers/react-netlify-identity-widget"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: 'powderblue' }}

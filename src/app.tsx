@@ -1,11 +1,11 @@
 import React from 'react'
-import { Login } from './components/login'
-import { Logout } from './components/logout'
-import { Signup } from './components/signup'
+import { Login } from 'components/login'
+import { Logout } from 'components/logout'
+import { Signup } from 'components/signup'
 import { User, useIdentityContext } from 'react-netlify-identity'
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@reach/tabs'
 
-import { Providers } from './components/providers'
+import { Providers } from 'components/providers'
 export type AuthProps = {
   onLogin?: (user?: User) => void
   onSignup?: (user?: User) => void

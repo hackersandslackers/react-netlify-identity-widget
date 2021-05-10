@@ -1,7 +1,7 @@
 import React from 'react'
 import { Dialog } from '@reach/dialog'
 import VisuallyHidden from '@reach/visually-hidden'
-import { Widget, AuthProps } from './app'
+import { Widget, AuthProps } from 'app'
 
 import {
   IdentityContextProvider as _IdentityContextProvider,
