@@ -1,5 +1,5 @@
 {
-  "name": "react-netlify-identity-widget",
+  "name": "@hackersandslackers/react-netlify-identity-widget",
   "version": "0.2.8",
   "main": "dist/index.js",
   "module": "dist/react-netlify-identity-widget.esm.js",
