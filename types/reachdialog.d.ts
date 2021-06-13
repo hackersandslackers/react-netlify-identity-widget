@@ -5,6 +5,7 @@ declare module "@reach/dialog" {
     isOpen?: boolean
     onDismiss?: () => void
     children?: React.ReactNode
+    aria-label?: string
   } & React.HTMLProps<HTMLDivElement>
 
   type DialogOverlayProps = {

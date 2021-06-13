@@ -8,8 +8,8 @@ export function Recover() {
         Email
         <input type="email" />
       </label>
-      <button>Send recovery email</button>
-      <button type="button">Never Mind</button>
+      <button aria-label="email">Send recovery email</button>
+      <button type="button" aria-label="cancel-email">Never Mind</button>
     </div>
   )
 }

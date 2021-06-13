@@ -1,7 +1,7 @@
 import React from 'react'
-import './style.css'
 import { IdentityModal, useIdentityContext, IdentityContextProvider } from 'react-netlify-identity-widget'
-import 'react-netlify-identity-widget/styles.css'
+require('dotenv').config({ path: __dirname+'/.env' });
+
 
 function App() {
   const url = process.env.REACT_APP_NETLIFY_IDENTITY_URL // should look something like "https://foo.netlify.com"
@@ -26,20 +26,20 @@ function AuthStatusView() {
     (identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.full_name) || 'NoName'
   const avatar_url = identity && identity.user && identity.user.user_metadata && identity.user.user_metadata.avatar_url
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app-header">
         {identity && identity.isLoggedIn ? (
           <>
             <h1> hello {name}!</h1>
             {avatar_url && <img alt="user name" src={avatar_url} style={{ height: 100, borderRadius: '50%' }} />}
-            <button className="btn" style={{ maxWidth: 400, background: 'orangered' }} onClick={() => setDialog(true)}>
+            <button className="btn" style={{ maxWidth: 400, background: 'orangered' }} onClick={() => setDialog(true)} aria-label="Logout">
               LOG OUT
             </button>
           </>
         ) : (
           <>
             <h1> hello! try logging in! </h1>
-            <button className="btn" style={{ maxWidth: 400, background: 'darkgreen' }} onClick={() => setDialog(true)}>
+            <button className="btn" style={{ maxWidth: 400, background: 'darkgreen' }} onClick={() => setDialog(true)} aria-label="Login">
               LOG IN
             </button>
           </>
@@ -51,19 +51,8 @@ function AuthStatusView() {
           onLogin={(user) => console.log('hello ', user!.user_metadata)}
           onSignup={(user) => console.log('welcome ', user!.user_metadata)}
           onLogout={() => console.log('bye ', name)}
+          aria-label="Login"
         />
-
-        <h3>
-          Or{' '}
-          <a
-            href="https://github.com/hackersandslackers/react-netlify-identity-widget"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: 'powderblue' }}
-          >
-            view the source
-          </a>
-        </h3>
       </header>
     </div>
   )

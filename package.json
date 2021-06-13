@@ -18,17 +18,20 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
-    "@types/react": "^17.0.5",
-    "@types/react-dom": "^17.0.3",
-    "auto-changelog": "^2.2.1",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
+    "auto-changelog": "^2.3.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
-    "gh-release": "^5.0.0",
+    "gh-release": "^6.0.0",
     "husky": "^6.0.0",
     "react-netlify-identity": "^0.2.5",
-    "semantic-release": "^17.4.2",
+    "semantic-release": "^17.4.3",
+    "ts-loader": "^9.2.3",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
     "tsdx": "^0.14.1",
-    "typescript": "^4.2.4 "
+    "typescript": "^4.3.2",
+    "webpack-cli": "^4.7.2"
   },
   "peerDependencies": {
     "@reach/dialog": "^0.15.0",
@@ -42,10 +45,14 @@
     }
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/hackersandslackers/react-netlify-identity-widget.git"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.14.5",
+    "dotenv": "^10.0.0"
   }
 }

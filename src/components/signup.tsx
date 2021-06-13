@@ -28,6 +28,7 @@ export function Signup({ onSignup }: SignupProps) {
     <form
       ref={formRef}
       className="form"
+      aria-label="Signup"
       onSubmit={(e: React.SyntheticEvent) => {
         e.preventDefault()
         signup()
@@ -70,7 +71,7 @@ export function Signup({ onSignup }: SignupProps) {
         </label>
       </div>
       <div>
-        <button type="submit" className={isLoading ? 'RNIW_btn RNIW_saving' : 'RNIW_btn'}>
+        <button type="submit" className={isLoading ? 'RNIW_btn RNIW_saving' : 'RNIW_btn'} aria-label="email">
           Sign Up
         </button>
         {msg && <pre style={{ background: 'salmon', padding: 10 }}>{msg}</pre>}

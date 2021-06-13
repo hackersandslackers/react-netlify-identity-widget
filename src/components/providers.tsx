@@ -40,7 +40,7 @@ function ProviderButton({ settings, provider }: { settings: Settings; provider: 
   const { loginProvider } = useIdentityContext()
   const click = () => loginProvider(provider.toLowerCase() as 'github' | 'gitlab' | 'bitbucket' | 'google')
   return (
-    <button onClick={click} className={`provider${provider} RNIW_btn RNIW_btnProvider`}>
+    <button onClick={click} className={`provider${provider} RNIW_btn RNIW_btnProvider`} aria-label="Signup">
       Continue with {provider}
     </button>
   )

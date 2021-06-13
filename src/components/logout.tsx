@@ -21,10 +21,11 @@ export function Logout({ onLogout }: LogoutProps) {
       .catch((err) => void console.error(err) || setMsg('Error: ' + err.message))
   return (
     <>
+    <div aria-label="Logout">
       <div className="RNIW_header">
         <button className="RNIW_btn RNIW_btnHeader active">Logged in</button>
       </div>
-      <form className="form ">
+      <form className="form">
         <p className="RNIW_infoText">
           Logged in as <br />
           <span className="RNIW_infoTextEmail">{name}</span>
@@ -34,6 +35,7 @@ export function Logout({ onLogout }: LogoutProps) {
         </button>
         {msg && <pre style={{ background: 'salmon', padding: 10 }}>{msg}</pre>}
       </form>
+      </div>
     </>
   )
 }

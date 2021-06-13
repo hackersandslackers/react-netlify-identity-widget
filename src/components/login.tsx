@@ -16,6 +16,7 @@ export function Login({ onLogin }: LoginProps) {
     <form
       ref={formRef}
       className="form"
+      aria-label="Login"
       onSubmit={(e: React.SyntheticEvent) => {
         e.preventDefault()
         const target = e.target as typeof e.target & { email: { value: string }; password: { value: string } }
