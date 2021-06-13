@@ -1,6 +1,6 @@
 {
   "name": "@hackersandslackers/react-netlify-identity-widget",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "main": "dist/index.js",
   "module": "dist/react-netlify-identity-widget.esm.js",
   "typings": "dist/index.d.ts",
@@ -13,7 +13,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "version": "tsdx build && auto-changelog -p --template keepachangelog && git add .",
+    "version": "0.3.0",
     "prepublishOnly": "git push && git push --tags && gh-release"
   },
   "devDependencies": {
@@ -38,11 +38,6 @@
     "@reach/tabs": "^0.15.0",
     "@reach/visually-hidden": "^0.15.0",
     "react": ">=17"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
