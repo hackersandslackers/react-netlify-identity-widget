@@ -127,3 +127,6 @@ dist
 node_modules
 .netlify
 .idea
+
+# NPM
+.npmrc

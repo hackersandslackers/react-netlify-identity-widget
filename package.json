@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "module": "dist/react-netlify-identity-widget.esm.js",
   "typings": "dist/index.d.ts",
+  "private": false,
   "files": [
     "dist",
     "styles.css"
