@@ -61,7 +61,7 @@
     "@reach/dialog": "^0.16.2",
     "@reach/tabs": "^0.16.4",
     "@reach/visually-hidden": "^0.16.0",
-    "react": ">=17",
+    "react": "^17.0.2",
     "@babel/eslint-parser": "^7.16.5",
     "dotenv": "^10.0.0"
   }

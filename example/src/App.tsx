@@ -1,13 +1,13 @@
 import React from 'react'
-import { IdentityModal, useIdentityContext, IdentityContextProvider } from 'react-netlify-identity-widget'
+import { IdentityModal, useIdentityContext, IdentityContextProvider } from '@hackersandslackers/react-netlify-identity-widget'
 require(`dotenv`).config({path: `.env`})
 
 
 function App() {
-  const url = process.env.REACT_APP_NETLIFY_IDENTITY_URL // should look something like "https://foo.netlify.com"
+  const url = process.env.REACT_APP_NETLIFY_IDENTITY_URL
   if (!url)
     throw new Error(
-      'process.env.REACT_APP_NETLIFY_IDENTITY_URL is blank2, which means you probably forgot to set it in your Netlify environment variables',
+      'process.env.REACT_APP_NETLIFY_IDENTITY_URL is blank, which means you probably forgot to set it in your Netlify environment variables',
     )
   return (
     <IdentityContextProvider url={url}>

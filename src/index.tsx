@@ -35,7 +35,7 @@ export function IdentityModal({ showDialog, onCloseDialog, ...authprops }: Modal
         maxWidth: 400,
       }}
     >
-      <button className="RNIW_btn RNIW_btnClose" onClick={onCloseDialog}>
+      <button className="RNIW_btn RNIW_btnClose" aria-label={`Close`} onClick={onCloseDialog}>
         <VisuallyHidden>Close</VisuallyHidden>
       </button>
       <Widget {...authprops} />
