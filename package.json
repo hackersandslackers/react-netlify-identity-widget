@@ -1,15 +1,16 @@
 {
   "name": "@hackersandslackers/react-netlify-identity-widget",
+  "description": "Maintained fork of the original `react-netlify-identity-widget` package.",
   "version": "0.3.0",
-  "main": "dist/index.js",
-  "module": "dist/react-netlify-identity-widget.esm.js",
-  "typings": "dist/index.d.ts",
-  "private": false,
-  "files": [
-    "dist",
-    "styles.css"
+  "homepage": "https://github.com/hackersandslackers/react-netlify-identity-widget/blob/master/README.md",
+  "author": "Todd Birchard <todd@hackersandslackers.com>",
+  "keywords": [
+    "Gatsby",
+    "React",
+    "Netlify",
+    "Authentication",
+    "JAMStack"
   ],
-  "license": "MIT",
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -17,9 +18,31 @@
     "version": "0.3.0",
     "prepublishOnly": "git push && git push --tags && gh-release"
   },
+  "main": "dist/index.js",
+  "module": "dist/react-netlify-identity-widget.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "styles.css"
+  ],
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hackersandslackers/react-netlify-identity-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hackersandslackers/react-netlify-identity-widget/issues"
+  },
   "devDependencies": {
     "@types/jest": "^27.0.3",
-    "@types/react": "^17.0.37",
+    "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "auto-changelog": "^2.3.0",
     "commitizen": "^4.2.4",
@@ -41,12 +64,5 @@
     "react": ">=17",
     "@babel/eslint-parser": "^7.16.5",
     "dotenv": "^10.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hackersandslackers/react-netlify-identity-widget.git"
   }
 }
