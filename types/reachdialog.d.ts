@@ -10,6 +10,7 @@ declare module "@reach/dialog" {
 
   type DialogOverlayProps = {
     initialFocusRef?: React.RefObject<HTMLElement>
+    aria-label?: string
   } & DialogProps
 
   type DialogContentProps = {
