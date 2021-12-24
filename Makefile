@@ -32,11 +32,11 @@ install:
 
 .PHONY: build
 build:
-	npm run build
+	yarn build
 
 .PHONY: test
 test:
-	npm run test
+	yarn test
 
 .PHONY: clean
 clean:

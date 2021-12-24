@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import { IdentityModal, useIdentityContext, IdentityContextProvider } from '@hackersandslackers/react-netlify-identity-widget'
 require(`dotenv`).config({path: `.env`})
 
